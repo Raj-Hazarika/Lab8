@@ -68,7 +68,7 @@ public class CustomListTest {
         City city = new City("Lacombe", "AB");
         list.addCity(city);
 
-        assertTrue(list.countCities() == 2);
+        assertTrue(list.countCities() == 1);
     }
 
 }
