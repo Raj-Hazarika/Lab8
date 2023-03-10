@@ -62,4 +62,13 @@ public class CustomListTest {
             list.delete(city); });
     }
 
+    @Test
+    void testCountCities() {
+        list = MockCityList();
+        City city = new City("Lacombe", "AB");
+        list.addCity(city);
+
+        assertTrue(list.countCities() == 2);
+    }
+
 }
